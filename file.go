@@ -11,14 +11,14 @@ import (
 	"github.com/pelletier/go-toml/v2"
 	"gopkg.in/yaml.v3"
 
-	"github.com/bamgoo/bamgoo"
-	. "github.com/bamgoo/base"
+	"github.com/infrago/infra"
+	. "github.com/infrago/base"
 )
 
 type FileConfigDriver struct{}
 
 func init() {
-	bamgoo.Register("file", &FileConfigDriver{})
+	infra.Register("file", &FileConfigDriver{})
 }
 
 func (d *FileConfigDriver) Load(params Map) (Map, error) {

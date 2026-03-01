@@ -1,2 +1,2 @@
 # config-file
-bamgoo file config driver.
+infrago file config driver.
